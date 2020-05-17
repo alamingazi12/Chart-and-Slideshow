@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+        finishAffinity();
+        super.onBackPressed();
+    }
+
     private void fillChart() {
         BarDataSet barDataSet1=new BarDataSet(barEntries1,"DataSet 1");
         barDataSet1.setColor(Color.BLACK);
